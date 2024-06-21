@@ -1,0 +1,13 @@
+name: Echo Message on Push
+
+on:
+  push:
+    branches:
+      - main  # Change 'main' to your branch name if different
+
+jobs:
+  echo-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Message
+        run: echo "Files pushed to the repository."
